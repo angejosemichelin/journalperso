@@ -1,0 +1,102 @@
+#--------------------------------------------------
+# Répertoire : /
+#--------------------------------------------------
+
+RewriteBase /
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+RewriteCond %{HTTPS} !on 
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$ 
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$ 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+# Notification :
+RewriteRule ^notifications.html$   /index-user.php?page=notifications [L]
+
+# Journal de id :
+RewriteRule ^journal-([0-9]+).html$   /journal.php?id=$1 [L]
+
+# Journal de id :
+RewriteRule ^journal-([0-9]+)-([0-9]+).html$   /journal.php?id=$1&idpub=$2 [L]
+
+# Index.php :
+RewriteRule ^accueil.html$   /index.php [L]
+
+# Index.php :
+RewriteRule ^accueil-([0-9]+).html$   /index.php?numero-page=$1 [L]
+
+# Index.php :
+RewriteRule ^accueil-membre-([0-9]+).html$   /index-user.php?numero-page=$1 [L]
+
+# Validation connexion :
+RewriteRule ^validation-connexion.html$   /index.php?page=validation-connexion [L]
+
+# Validation inscription :
+RewriteRule ^validation-inscription.html$   /index.php?page=validation-inscription [L]
+
+# Connexion :
+RewriteRule ^connexion.html$   /index.php?page=connexion [L]
+
+# Inscription :
+RewriteRule ^inscription.html$   /index.php?page=inscription [L]
+
+# Inscription :
+RewriteRule ^mentionslegales.html$   /index.php?page=mentions-legales [L]
+
+# Reglement non membre :
+RewriteRule ^reglement2.html$   /index.php?page=reglement2 [L]
+
+# Recherche :
+RewriteRule ^recherche.html$   /index.php?page=recherche [L]
+
+# Mot de passe oublie :
+RewriteRule ^motdepasse-oublie.html$   /index.php?page=motdepasse-oublie [L]
+
+# Mon compte :
+RewriteRule ^moncompte.html$   /index-user.php?page=moncompte [L]
+
+# Accueil membre :
+RewriteRule ^accueil-membre.html$   /index-user.php?page=accueil-membre [L]
+
+# Modifier Journal :
+RewriteRule ^modifier-journal-([0-9]+).html$   /index-user.php?page=modifier-journal&id=$1 [L]
+
+# Modifier Journal :
+RewriteRule ^supprimer-journal-([0-9]+).html$   /index-user.php?page=creerunjournal&suppr-id=$1 [L]
+
+# Parrainnage :
+RewriteRule ^parrainnage.html$   /index-user.php?page=parrainnage [L]
+
+# Reglement :
+RewriteRule ^reglement.html$   /index-user.php?page=reglement [L]
+
+# Demande paiement :
+RewriteRule ^demande-paiement.html$   /index-user.php?page=demande-paiement [L]
+
+# Renvoi mail :
+RewriteRule ^renvoi_mail_validation_compte.html$   /index-user.php?page=renvoi_mail_validation_compte [L]
+
+# Statistiques :
+RewriteRule ^statistiques.html$   /index-user.php?page=statistiques [L]
+
+# Créer un journal :
+RewriteRule ^creerunjournal.html$   /index-user.php?page=creerunjournal [L]
+
+# Publier plus:
+RewriteRule ^modifier-journal-([0-9]+)-([0-9]+).html$   /index-user.php?page=modifier-journal&id=$1&numero-page=$2 [L]
+
+# Publier plus:
+RewriteRule ^supprimer-publication-([0-9]+)-([0-9]+).html$   /index-user.php?page=modifier-journal&id=$1&suppr-id=$2 [L]
+
+# Publier plus:
+RewriteRule ^payant-([0-9]+)-([0-9]+).html$   /index-user.php?page=modifier-journal&id=$1&payant=$2 [L]
+

@@ -1,0 +1,444 @@
+/* ---- FONTS ---- */
+@font-face{
+    font-family: 'bebasregular';
+    src: url('../../ressources/fonts/bebas-webfont.woff2') format('woff2'),
+         url('../../ressources/fonts/bebas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blueberryregular';
+    src: url('../../ressources/fonts/blueberry_regular-webfont.woff2') format('woff2'),
+         url('../../ressources/fonts/blueberry_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* ----  GLOBAL ---- */
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0; padding: 0;
+}
+body {
+    display : table;
+    width: 100%;
+}
+footer {
+    width:100%;
+    text-align: center;
+    display : table-row;
+    height: 100px; /* à titre d'exemple */
+}
+/* ----  CLASSES ---- */
+.violet{
+    color:#c252e7;
+}
+.h1{
+    border-left: 8px solid #c252e7;
+    border-bottom: 4px solid #c252e7;
+    padding: 0 0 3px 10px;
+    margin: 15px 0;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    width:100%;
+    display: block;
+}
+.nbr_journaux{
+    text-align: center;
+    color:#595e63;
+    font-family: 'bebasregular';
+    font-weight: bold;
+    font-size: 1.6em; 
+}
+.centrer{
+    margin:0 auto;
+    display: block;
+}
+.fond_gris{
+    position: absolute;
+    display:block;
+    top:0;
+    left:0;
+    width:100%;
+    min-height:100%;
+    background-color:gray;
+    opacity: 0.8;
+    z-index: 1000;
+}
+.messsage_fond_gris{
+    display:block;
+}
+.publier_btn{
+    display:block;
+    width:40%;
+    text-align:center;
+    margin:10px auto 0 auto;
+}
+.align-center-90{
+    margin:0 auto; 
+    display:block; 
+    width:90%
+}
+.telecharger{
+    margin:0 auto; 
+    display:block; 
+    width:80%
+}
+.logo {
+    padding: 15px;
+}
+.langues{
+    position:absolute;
+    width:50px;
+    right:0;
+}
+.langues img{
+    margin: 3px;
+    width: 25px;
+    height: 18px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+}
+.publier_btn{
+    display:block;
+    width:40%;
+    text-align:center;
+    margin:10px auto 0 auto;
+}
+.nav-link{
+    color:white!important;
+    padding:0 10px!important;
+}
+.a_button{
+    display:block;
+    text-align: center;
+    width: 250px;
+    margin:10px auto 20px auto;
+    padding:7px 19px;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+.a_button:hover{
+    color: white;
+    background-color: #c252e7;
+    text-decoration: none;
+}
+.podium {
+    padding-right:5px;
+    margin-top:-10px;
+}
+.journaux_connus {
+    font-family: 'blueberryregular';
+    text-decoration: none!important;
+    font-size: 0.9em;
+    color:#C252E7;
+}
+.list {
+    list-style-type: circle;
+}
+.border-violet{
+    border:2px solid #c252e7;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+.contenu-centre{
+    padding:1% 4%;
+}
+.p-line{
+    line-height: 1;
+}
+/* ---- HEADER ---- */
+header{
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(117, 190, 218, 0.5);
+    position:relative;
+    padding-bottom: 15px;
+    vertical-align: top;
+}
+
+/* ---- IDS ---- */
+#vue_video{
+    text-align:center;
+    font-size:0.8em;
+    color:#c252e7;
+}
+#int_intro {
+    padding:1% 5%;
+}
+#publicite {
+    display:inline-block;
+    height: 80px;
+    width:300px;
+    vertical-align:top;
+    padding: 10px;
+}
+#video_presentation{
+    text-align: center;
+    width:30%;
+    display:inline-block;
+}
+#div_introduction{
+    width:69%;
+    display:inline-block;
+}
+#contenu{
+    padding:3px;
+}
+#wrapper{
+    width: 70%;
+    margin:2px auto 0 auto;
+}
+#wrapper2{
+    width: 70%;
+    margin:2px auto 0 auto;
+}
+#mot_de_passe_journal_div{
+    border: 2px dashed black;
+    margin: 10px auto;
+    width: 350px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+#div_texte_smartphone{
+    display:none;
+}
+#div_texte_pc{
+    display:block;
+}
+#lien_header {
+    width:100%;
+    display: block;
+    height:100%;
+    text-decoration: none;
+    color:transparent;
+}
+#lien_header:hover {
+    text-decoration: none;
+    color:transparent;
+}
+#inscription_accueil {
+    width: 49%;
+    display: inline-block;
+}
+#image_accueil {
+    margin: 10px 0;
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+}
+#petit_ecran {
+    display:none;
+}
+#solde{
+    position:absolute;
+    top:8px;
+    right:60px;
+    color:black;
+    background-color:white;
+    padding:6px 15px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+/* ---- JOURNAL ---- */
+#ecrire_texte{
+    background-color:gray;
+    padding:5px;
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+}
+.publication{
+    margin-bottom: 5px;
+    font-size:1em;
+    overflow: hidden;
+}
+#img_gagner_argent{
+    display: block;
+    height:350px;
+    margin: 0 auto;
+}
+
+/* ---- Dessin ---- */
+.palette span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #606060;
+}
+.gomme span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #606060;
+}
+.palette span:hover{
+    border-color: black;
+    -webkit-transform: scale(1.2, 1.2);
+    -webkit-box-shadow: 2px 2px 5px #888888;
+}
+.gomme span:hover{
+    border-color: black;
+    transform: scale(1.2, 1.2);
+    box-shadow: 2px 2px 5px #888888;
+}
+canvas{
+    border: 2px solid #444;
+    -webkit-box-shadow: 2px 2px 4px #333333;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px #666;
+}
+#div_dessin{
+    vertical-align: top;
+}
+.card-journaux-connus {
+    width:22.5%;
+    display:inline-block;
+    margin:1%;
+    vertical-align:top;
+}
+
+/* ---- RESPONSIVE ----  */
+@media screen and (max-height: 575px){
+    #rc-imageselect,
+    .g-recaptcha{
+        transform:scale(0.77);
+        transform-origin:0;
+        transform:scale(0.77);
+        transform-origin:0 0;
+        -webkit-transform:scale(0.77);
+        transform:scale(0.77);
+        -webkit-transform-origin:0 0;
+        transform-origin:0 0;
+    }
+}
+@media screen and (max-width: 1100px){
+    #wrapper{
+        width:90%;
+        margin:0 auto;
+        display:block;
+    }
+    #publicite {
+        text-align: center;
+        width:100%;
+    }
+    #img_gagner_argent{
+        width: 99%;
+        height:200px;
+    }
+}
+@media screen and (max-width: 800px){
+    /*
+    #wrapper{
+        display:none;
+    }*/
+    #solde{
+        display:none;
+    }
+    #wrapper{
+        width:98%;
+        margin:0 auto;
+        display:block;
+    }
+    #wrapper2{
+        width:98%;
+        margin:0 auto;
+        display:block;
+    }
+    #video_presentation{
+        width:100%;
+        display:block;
+        text-align: center;
+    }
+    .card-journaux-connus {
+        width:100%;
+        margin:1%;
+    }
+    #div_introduction{
+        width:100%;
+        display:block;
+    }
+    /*
+    #petit_ecran {
+        display:block;
+    }*/
+    .publier_btn{
+        width:100%;
+    }
+    #div_texte_smartphone{
+        display:block;
+    }
+    #div_texte_pc{
+        display:none;
+    }
+    #div_dessin{
+        display:none;
+    }
+    #img_gagner_argent{
+        width: 80%;
+        height:200px;
+    }
+    #inscription_accueil {
+        width: 100%;
+    }
+    #image_accueil {
+        width: 100%;
+    }
+    #inscription_accueil {
+        /*display: none;*/
+    }
+}
+@media screen and (max-width: 400px){
+    #img_gagner_argent{
+        width: 90%;
+        height:200px;
+    }
+    .nbr_journaux{
+        font-size: 1.6em; 
+    }
+    .podium {
+        display: none;
+    }
+    #mot_de_passe_journal_div{
+        width: 95%;
+        display:block;
+        margin:0 auto;
+    }
+    body {
+        font-size: 0.8em;
+    }
+    .publier_btn{
+        width:100%;
+    }
+    .logo{
+        width:90%;
+    }
+}
