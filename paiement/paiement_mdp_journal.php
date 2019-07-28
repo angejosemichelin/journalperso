@@ -1,2 +1,0 @@
-<?php $langue = langue(); ?>
-<div id="starpass_430044"></div><script type="text/javascript" src="https://script.starpass.fr/script.php?idd=430044&amp;verif_en_php=1&amp;datas=<?php echo $_GET["id"]; ?>"></script><noscript>Veuillez activer le Javascript de votre navigateur s'il vous pla&icirc;t.<br /><a href="https://www.starpass.fr/">Micro Paiement StarPass</a></noscript>
